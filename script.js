@@ -57,7 +57,7 @@ var myBanners = [
       imageUrl: '3.png', 
       onClick: 'Banner_OnClick(1)'
     }
-],
+]
 var Banner_OnClick = function(val) {
     alert("Banner_OnClick: "+val);
 }
