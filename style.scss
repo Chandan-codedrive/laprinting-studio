@@ -1,12 +1,35 @@
-
+$base-color: #0a86d3;
 body{
     margin: 0px;
     padding: 0px;
+}
 
+body h1 {
+    color: $base-color;
 }
 .head-logo img {
     width: 10rem;
     height: auto;
+}
+
+.head-contact {
+    color: $base-color;
+    font-weight: 500;
+    // text-decoration: underline;
+}
+
+.heade-menue {
+    color: $base-color;
+    font-size: 1.2rem;
+    border: solid 0.1rem;
+}
+
+
+
+.head-contact-line {
+    content: '';
+    width: 20rem;
+    border-bottom: solid 0.2rem ;
 }
 
 #bannerRotator {
@@ -20,17 +43,18 @@ body{
 
 .gallery-title{
     font-size: 36px;
-    color: #3F6184;
+    color: $base-color;
     text-align: center;
     font-weight: 500;
     margin-bottom: 70px;
+    text-decoration: underline;
 }
 .filter-button{
     font-size: 18px;
-    border: 2px solid #3F6184;
+    border: 2px solid $base-color;
 	padding:5px 10px;
     text-align: center;
-    color: #3F6184;
+    color: $base-color;
     margin-bottom: 30px;
 	background:transparent;
 }
@@ -38,7 +62,7 @@ body{
 .filter-button:focus,
 .filter-button.active{
     color: #ffffff;
-    background-color:#3F6184;
+    background-color: $base-color;
 	outline:none;
 }
 .gallery_product{
@@ -79,7 +103,7 @@ body{
 }
 
 .icon {
-    color: rgb(105, 27, 179)
+    color: $base-color
 }
 
 .contact:hover {
@@ -110,8 +134,8 @@ textarea,
 }
 
 .input-field:hover {
-    border: 2px solid rgb(105, 27, 179);
-    color: rgb(105, 27, 179);
+    border: 2px solid $base-color;
+    color: $base-color;
     cursor: pointer
 }
 
@@ -128,7 +152,7 @@ label {
 }
 
 .btn {
-    background-color: rgb(105, 27, 179);
+    background-color: $base-color;
     color: #fff;
     padding: 5px 10px;
     width: 200px;
@@ -160,7 +184,7 @@ label {
 
     .contact {
         margin: 10px 0;
-        border: 1px solid rgb(105, 27, 179);
+        border: 1px solid $base-color;
         border-radius: 5px
     }
 }
@@ -171,14 +195,14 @@ label {
 .testimonial{
     padding: 70px 30px 50px;
     margin: 50px 30px 30px;
-    border: 1px solid #ea816b;
+    border: 1px solid $base-color;
     position: relative;
 }
 .testimonial .pic{
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border: 5px solid #c7373c;
+    border: 5px solid $base-color;
     overflow: hidden;
     margin: 0 auto;
     position: absolute;
@@ -192,7 +216,7 @@ label {
 }
 .testimonial .description{
     font-size: 15px;
-    color: #5e595b;
+    color: black;
     line-height: 27px;
     text-align: center;
     margin: 0;
@@ -212,10 +236,10 @@ label {
     padding: 10px;
     margin: 0 auto;
     background: #fff;
-    border: 1px solid #ea816b;
+    border: 1px solid $base-color;
     font-size: 20px;
     font-weight: 700;
-    color: #c7373c;
+    color: $base-color;
     letter-spacing: 1px;
     text-transform: uppercase;
     position: absolute;
@@ -225,7 +249,7 @@ label {
 }
 .testimonial .post{
     font-size: 15px;
-    color: #671a36;
+    color: $base-color;
 }
 .owl-theme .owl-controls{
     width: 100%;
@@ -254,7 +278,7 @@ label {
     content: "\003C";
     font-family: "Font Awesome 5 Free"; font-weight: 900;
     font-size: 30px;
-    color: #c7373c;
+    color: $base-color;
     opacity: 1;
 }
 .owl-next:after{ content: "\003E"; }
