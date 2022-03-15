@@ -44,27 +44,34 @@ $(document).ready(function(){
     });
 })
 
-var myBanners = [ 
-    {
-      imageUrl: 'https://img.republicworld.com/republic-prod/stories/promolarge/xhdpi/lfbdjxyalnwf2gcg_1636694103.jpeg', 
-      onClick: 'Banner_OnClick(1)'
-    },
-    {
-      imageUrl: '2.png', 
-      onClick: 'Banner_OnClick(2)'
-    },
-    {
-      imageUrl: '3.png', 
-      onClick: 'Banner_OnClick(1)'
-    }
-]
-var Banner_OnClick = function(val) {
-    alert("Banner_OnClick: "+val);
-}
+// var myBanners = [ 
+//     {
+//       imageUrl: 'https://img.republicworld.com/republic-prod/stories/promolarge/xhdpi/lfbdjxyalnwf2gcg_1636694103.jpeg', 
+//       onClick: 'Banner_OnClick(1)'
+//     },
+//     {
+//       imageUrl: 'https://i.stack.imgur.com/0nhZp.png', 
+//       onClick: 'Banner_OnClick(2)'
+//     },
+//     {
+//       imageUrl: 'https://letterhub.com/wp-content/uploads/2018/06/printing.jpg', 
+//       onClick: 'Banner_OnClick(1)'
+//     }
+// ]
+// var Banner_OnClick = function(val) {
+//     alert("Banner_OnClick: "+val);
+// }
 
-var instance = new QuickBanner({
-    id: 'bannerRotator', 
-    banners: myBanners,
-});
+// var instance = new QuickBanner({
+//     id: 'bannerRotator', 
+//     banners: myBanners,
+// });
 
-createBanner();
+// createBanner();
+
+const imageList = ['https://i.stack.imgur.com/0nhZp.png','https://letterhub.com/wp-content/uploads/2018/06/printing.jpg','https://img.republicworld.com/republic-prod/stories/promolarge/xhdpi/lfbdjxyalnwf2gcg_1636694103.jpeg']
+
+$('.mySlider').swiper({
+    imageList: imageList,
+    animateType: 'animate'
+  });
